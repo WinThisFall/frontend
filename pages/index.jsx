@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>NextJS Template</title>
+        <title>FileNode</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
