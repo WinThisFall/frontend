@@ -12,8 +12,7 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  useDisclosure,
-  Lorem
+  useDisclosure
 } from '@chakra-ui/react';
 
 const SplitScreenCTA = () => {
@@ -74,7 +73,12 @@ const SplitScreenCTA = () => {
                 <ModalHeader>Modal Title</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
-                  <Lorem count={2} />
+                  <Text>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing, elit.
+                    Ipsam ducimus iusto voluptatum nihil, neque ea quam
+                    similique odio nam animi. Sed deleniti aperiam accusamus
+                    sint ea deserunt distinctio, similique laudantium.
+                  </Text>
                 </ModalBody>
 
                 <ModalFooter>
