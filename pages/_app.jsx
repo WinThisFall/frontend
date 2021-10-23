@@ -40,7 +40,7 @@ const MyApp = ({ Component, pageProps, router }) => {
             icon="/favicon.ico"
             facebook={{}}
             twitter={{
-              site: '@JanaSunrise',
+              site: ['mudrankgupta' , 'JanaSunrise' , 'sohoooom' , '0xDak'],
               card: 'summary'
             }}
           />
