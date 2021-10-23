@@ -9,8 +9,8 @@ import {
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
+  ModalFooter,
   ModalCloseButton,
   useDisclosure
 } from '@chakra-ui/react';
@@ -38,11 +38,11 @@ const SplitScreenCTA = () => {
               color={'white'}
               as={'span'}
               fontFamily="Poppins"
-              fontSize="3xl"
+              fontSize="4xl"
             >
-              The future of filesharing.
+              The future of Filesharing.
               <span>
-                <Text fontWeight={800} fontSize="xl">
+                <Text fontWeight={800} fontSize="2xl">
                   Safe. Free. Secure.
                 </Text>{' '}
               </span>
@@ -69,8 +69,8 @@ const SplitScreenCTA = () => {
 
             <Modal isOpen={isOpen} onClose={onClose}>
               <ModalOverlay />
-              <ModalContent>
-                <ModalHeader>Modal Title</ModalHeader>
+              <ModalContent fontFamily="Poppins">
+                <ModalHeader fontWeight={900}>How it works!</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                   <Text>
@@ -81,12 +81,7 @@ const SplitScreenCTA = () => {
                   </Text>
                 </ModalBody>
 
-                <ModalFooter>
-                  <Button colorScheme="blue" mr={3} onClick={onClose}>
-                    Close
-                  </Button>
-                  <Button variant="ghost">Secondary Action</Button>
-                </ModalFooter>
+                <ModalFooter />
               </ModalContent>
             </Modal>
           </Stack>
