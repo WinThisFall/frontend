@@ -1,8 +1,6 @@
 import Head from 'next/head';
 
-import { Center, Heading } from '@chakra-ui/react';
-
-import CtaComponent from '../components/core/CTA';
+import SplitScreenCTA from '../components/core/SplitScreen';
 
 const Home = () => {
   return (
@@ -12,7 +10,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <CtaComponent />
+      <SplitScreenCTA />
     </div>
   );
 };

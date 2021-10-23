@@ -29,7 +29,14 @@ const MyApp = ({ Component, pageProps, router }) => {
           <SEO
             title="FileNode"
             description="Your decentralized dropbox. Safe. Free. Secure."
-            keywords={['dropbox', 'decentralized', 'secure', 'web3', 'ipfs', 'blockchain']}
+            keywords={[
+              'dropbox',
+              'decentralized',
+              'secure',
+              'web3',
+              'ipfs',
+              'blockchain'
+            ]}
             icon="/favicon.ico"
             facebook={{}}
             twitter={{
