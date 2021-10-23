@@ -1,3 +1,4 @@
+import SEO from '@bradgarropy/next-seo';
 import { Box, ChakraProvider, CSSReset, theme } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import NextNProgress from 'nextjs-progressbar';
@@ -25,6 +26,17 @@ const MyApp = ({ Component, pageProps, router }) => {
           options={{ showSpinner: false }}
         />
         <Layout>
+          <SEO
+            title="FileNode"
+            description="Your decentralized dropbox. Safe. Free. Secure."
+            keywords={['dropbox', 'decentralized', 'secure', 'web3', 'ipfs', 'blockchain']}
+            icon="/favicon.ico"
+            facebook={{}}
+            twitter={{
+              site: '@JanaSunrise',
+              card: 'summary'
+            }}
+          />
           <Component {...pageProps} />
         </Layout>
       </MotionBox>
