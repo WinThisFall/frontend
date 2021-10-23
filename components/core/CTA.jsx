@@ -36,15 +36,22 @@ const CtaComponent = () => {
           fontWeight={600}
           fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
+          fontFamily="Poppins"
         >
           File
-          <Text as={'span'} color={'green.400'}>
+          <Text as={'span'} color={'purple.400'}>
             node.
           </Text>
         </Heading>
-        <Text color={'gray.500'}>
-
-          Your decentralized dropbox. Safe. Free. Secure.
+        <Text
+          color={'purple.200'}
+          fontFamily="Poppins"
+          fontSize={{ base: '2xl', sm: 'xl', md: '3xl' }}
+        >
+          Your decentralized dropbox.
+          <span>
+            <Text fontWeight={700}>Safe. Free. Secure.</Text>
+          </span>
         </Text>
         <Stack
           direction={'column'}
@@ -54,17 +61,23 @@ const CtaComponent = () => {
           position={'relative'}
         >
           <Button
-            colorScheme={'green'}
-            bg={'green.400'}
+            colorScheme={'purple'}
+            bg={'purple.400'}
             rounded={'full'}
             px={6}
             _hover={{
-              bg: 'green.500'
+              bg: 'purple.500'
             }}
+            fontFamily="Poppins"
           >
             Get Started
           </Button>
-          <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+          <Button
+            variant={'link'}
+            colorScheme={'blue'}
+            size={'sm'}
+            fontFamily="Poppins"
+          >
             Learn more!
           </Button>
           <Box>
@@ -78,10 +91,10 @@ const CtaComponent = () => {
             />
             <Text
               fontSize={'lg'}
-              fontFamily={'Caveat'}
+              fontFamily="Poppins"
               position={'absolute'}
               right={'-125px'}
-              top={'-15px'}
+              top={'-30px'}
               transform={'rotate(10deg)'}
             >
               {"It's easy and amazing!"}
