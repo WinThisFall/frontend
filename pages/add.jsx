@@ -11,19 +11,17 @@ const ipfs = create({
 const Add = () => {
 	const [file, setFile] = useState(undefined);
 	const [formError, setFormError] = useState(null);
+	const [buffer, setBuffer] = useState(null);
 
 	const addFile = () => {
 		if (file !== undefined) {
 			setFormError(false);
 			let reader = new FileReader();
-			reader.onload = async e => {
-				const { cid } = await ipfs.add(
-					urlSource(`data:application/octet-stream,${e.target.result}`)
-				);
+			reader.readAsArrayBuffer(file);
+			reader.onloadend = async e => {
+				const { cid } = await ipfs.add(Buffer(reader.result));
 				console.log(cid);
-				console.log(e.target.result);
 			};
-			reader.readAsDataURL(file);
 		} else {
 			setFormError(true);
 		}
