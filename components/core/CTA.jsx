@@ -84,7 +84,6 @@ import {
   Image,
   Stack,
   Text,
-  useBreakpointValue,
 } from '@chakra-ui/react';
 
 export default function SplitScreen() {
@@ -95,11 +94,11 @@ export default function SplitScreen() {
           <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
 
             <Text color={'white'} as={'span'}  fontFamily="Poppins">
-            The future of filesharfing   
+            The future of filesharing
             </Text>{' '}
             {/* <span><Text bgGradient="linear(135deg, #FFCC33 0%, #E233FF 100%)" bgClip="text">Filenode</Text></span> */}
           </Heading>
-         
+
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
             <Button
               rounded={'full'}
@@ -121,7 +120,7 @@ export default function SplitScreen() {
           alt={'Login Image'}
           objectFit={'cover'}
           src={
-            '/networking.svg'
+            '/static/networking.svg'
           }
         />
       </Flex>
