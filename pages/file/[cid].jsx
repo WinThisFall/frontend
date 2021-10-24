@@ -33,19 +33,6 @@ function File() {
           link.click();
         });
     };
-    // if (cid) {
-    // 	fetch(`https://ipfs.io/ipfs/${cid}`)
-    // 		.then(res => res.blob())
-    // 		.then(blob => {
-    // 			file = new File([blob], 'File name');
-    // 			link.href = file;
-    // 			link.download = magic.png;
-
-    // 			link.click();
-    // 		});
-    // } else {
-    // 	return false;
-    // }
   });
 
   return (

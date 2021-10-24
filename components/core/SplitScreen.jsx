@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+
 import {
   Button,
   Flex,
@@ -18,6 +20,9 @@ import {
 const SplitScreenCTA = () => {
   // Modal state
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  // Router
+  const router = useRouter();
 
   // Render
   return (
@@ -59,6 +64,7 @@ const SplitScreenCTA = () => {
               _hover={{
                 bg: 'blue.500'
               }}
+              onClick={() => router.push('/add')}
             >
               Create Project
             </Button>
@@ -74,10 +80,9 @@ const SplitScreenCTA = () => {
                 <ModalCloseButton />
                 <ModalBody>
                   <Text>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing, elit.
-                    Ipsam ducimus iusto voluptatum nihil, neque ea quam
-                    similique odio nam animi. Sed deleniti aperiam accusamus
-                    sint ea deserunt distinctio, similique laudantium.
+                    The future for file sharing while being free, fast and
+                    secure. We provide decentralised file sharing for everyone
+                    under 60 seconds. It what it does.
                   </Text>
                 </ModalBody>
 
