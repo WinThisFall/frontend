@@ -66,7 +66,7 @@ const Add = () => {
       <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
         <Stack align={'center'}>
           <Heading fontSize={'4xl'} fontFamily="Poppins">
-            Upload your file 📂
+            Upload your file! 📂
           </Heading>
         </Stack>
         <Box
