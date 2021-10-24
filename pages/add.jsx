@@ -136,7 +136,7 @@ const Add = () => {
 
                       <Text>
                         <strong>URL to the file → </strong>
-                        <Link href={`/file/${cid.string}`}>
+                        <Link href={`https://ipfs.io/ipfs/${cid.string}`}>
                           <a>{`https://ipfs.io/ipfs/${cid.string}`}</a>
                         </Link>
                       </Text>

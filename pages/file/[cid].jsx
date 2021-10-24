@@ -10,30 +10,13 @@ function File() {
   let file;
 
   useEffect(() => {
-    // set window
     windowType = window;
 
-    console.log(cid);
-
     let link = document.createElement('a');
-
-    const Http = new XMLHttpRequest();
-    const url = `https://ipfs.io/ipfs/${cid}`;
-    Http.open('GET', url);
-    Http.send();
-
-    Http.onloadend = e => {
-      fetch(Http.responseText)
-        .then(res => res.blob())
-        .then(blob => {
-          file = new File([blob], 'File name');
-          link.href = file;
-          link.download = magic.png;
-
-          link.click();
-        });
-    };
-  });
+    link.href = `https://ipfs.io/ipfs/${cid}`;
+    link.download = 'filenode.png';
+    link.click();
+  }, []);
 
   return (
     <Flex
