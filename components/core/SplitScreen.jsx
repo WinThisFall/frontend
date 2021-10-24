@@ -80,9 +80,13 @@ const SplitScreenCTA = () => {
                 <ModalCloseButton />
                 <ModalBody>
                   <Text>
-                    The future for file sharing while being free, fast and
-                    secure. We provide decentralised file sharing for everyone
-                    under 60 seconds. It what it does.
+                    The Filenode is an IPFS peer that runs on your computer, so
+                    you can share files or folders, instantly. Just drag and
+                    drop the files you want to share! Whether you are looking to
+                    collaborate with friends on computing homework, backup some
+                    sensitive files on a decentralized network, or reduce your
+                    carbon footprint by hosting everything locally - Filenode
+                    is your solution.
                   </Text>
                 </ModalBody>
 
