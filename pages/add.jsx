@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import {
   Flex,
   Box,
@@ -5,14 +7,10 @@ import {
   Button,
   FormControl,
   FormLabel,
-  Checkbox,
   Stack,
-  Link,
   Heading,
-  Text,
   useColorModeValue
 } from '@chakra-ui/react';
-import { useState } from 'react';
 import { create, urlSource } from 'ipfs-http-client';
 
 const ipfs = create({
@@ -61,7 +59,9 @@ const Add = () => {
         >
           <Stack spacing={4}>
             <FormControl id="file">
-              <FormLabel fontFamily="Poppins" textAlign="center">Upload your file here!</FormLabel>
+              <FormLabel fontFamily="Poppins" textAlign="center">
+                Upload your file here!
+              </FormLabel>
               <Input type="file" onChange={e => setFile(e.target.files[0])} />
             </FormControl>
             <Stack spacing={10}>

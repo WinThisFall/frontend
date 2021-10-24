@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
-import { Flex, Box, Button } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+
+import { Flex, useColorModeValue, Heading, Container } from '@chakra-ui/react';
 
 function File() {
   const router = useRouter();
@@ -48,9 +49,31 @@ function File() {
   });
 
   return (
-    <Box>
-      <Flex>Your file should download soon :)</Flex>
-    </Box>
+    <Flex
+      minH={'100vh'}
+      align={'center'}
+      justify={'center'}
+      bg={useColorModeValue('gray.50', 'gray.800')}
+    >
+      <Container
+        maxW={'lg'}
+        bg={useColorModeValue('white', 'whiteAlpha.100')}
+        boxShadow={'xl'}
+        rounded={'lg'}
+        p={6}
+        direction={'column'}
+      >
+        <Heading
+          as={'h2'}
+          fontSize={{ base: 'xl', sm: '2xl' }}
+          textAlign={'center'}
+          mb={5}
+          fontFamily="Poppins"
+        >
+          Your file should download soon! {':)'}
+        </Heading>
+      </Container>
+    </Flex>
   );
 }
 
